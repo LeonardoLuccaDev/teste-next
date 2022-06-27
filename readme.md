@@ -14,13 +14,13 @@ Aplicação desenvolvida com a finalidade ser avaliada para o processo seletivo 
 > npm install ou yarn install
 
 - Com as dependências instaladas na API, dentro da pasta da back-end, crie um arquivo **.env** com as seguintes variáveis de ambiente:
-> DATABASE_URL=**(local onde o banco em SQLite irá ficar)**
+> DATABASE_URL=**(local onde o banco em SQLite irá ficar, exemplo: "file:./dev.db")**
 
-> JWT_SECRET= **(local onde armazena o segredo jwt para autenticação)**
+> JWT_SECRET= **(local onde armazena o segredo jwt para autenticação, exemplo: código gerado pelo comando no terminal openssl rand -hex 32)**
 
-> PORT=**(Porta onde estará rodando a API)**
+> PORT=**(Porta onde estará rodando a API, exemplo: 4000)**
 
-> ALLOWED_ORIGINS=**(Para qual front-end ele irá disponibilizar as rotas)**
+> ALLOWED_ORIGINS=**(Para qual front-end ele irá disponibilizar as rotas da API, exemplo: http://localhost:3000)**
 
 - Com as variáveis de ambiente criadas, execute o comando no terminal para criar o banco com as tabelas configuradas:
 
@@ -75,7 +75,7 @@ server running on port (porta escolhida)
 
 - Com as dependências instaladas no front-end, dentro da pasta do front-end, crie um arquivo **.env** com as seguintes variáveis de ambiente:
 
->REACT_APP_API= **(Caminho da API, exemplo: http://localhost:(porta escolhida)/api)**
+>REACT_APP_API= **(http://localhost:(porta escolhida na API)/api)**
 
 - Após configurar este arquivo, para rodar a parte web, execute o comando dentro do terminal do front-end:
 
