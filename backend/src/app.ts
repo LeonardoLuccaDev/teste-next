@@ -10,7 +10,7 @@ const port = process.env.PORT ?? 4000;
 
 const app = express();
 
-const allowedOrigins = process.env.CORS ?? "http://localhost:3000";
+const allowedOrigins = process.env.ALLOWED_ORIGINS ?? "http://localhost:3000";
 
 const options: cors.CorsOptions = {
     origin: allowedOrigins
