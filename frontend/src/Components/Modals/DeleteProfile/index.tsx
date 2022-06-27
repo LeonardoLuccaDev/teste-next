@@ -1,6 +1,4 @@
-import { Form } from "@unform/web";
-import { useRef, useState } from "react";
-import { useUser } from "../../../Context/User";
+import { useState } from "react";
 import { GrClose } from "react-icons/gr"
 import { toast } from "react-toastify";
 import { DeleteUserProps } from "../../../@types/User";
@@ -9,8 +7,6 @@ import { useNavigate } from "react-router-dom";
 
 
 export const DeleteProfileModal = ({id}: DeleteUserProps): JSX.Element => {
-    const { user } = useUser();
-    const formRef = useRef(null);
     const push = useNavigate();
     const [showModal, setShowModal] = useState(false);
 

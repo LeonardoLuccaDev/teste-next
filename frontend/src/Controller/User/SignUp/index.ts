@@ -1,4 +1,3 @@
-import { toast } from "react-toastify";
 import { RegisterProps } from "../../../@types/User";
 import { api } from "../../../Services";
 
